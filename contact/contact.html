@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wines_v1.0</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f1f7f2d043.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="w3-dropdown-hover">
+          <button class="navbar-brand">Sample Page</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="../index.html#Red" class="w3-bar-item w3-button">Red</a>
+            <a href="../index.html#White" class="w3-bar-item w3-button"
+              >White</a
+            >
+            <a href="../index.html#Sparkling" class="w3-bar-item w3-button"
+              >Sparkling</a
+            >
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../index.html"><i class="fas fa-house-user"></i> Home</a>
+            </li>
+            <li>
+              <a href="../about/about.html"
+                ><i class="fas fa-list-alt"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="../contact/contact.html"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#cart"
+                >
+                  <i class="fas fa-shopping-cart"></i> Cart (<span
+                    class="total-count"
+                  ></span
+                  >)
+                </button>
+                <button class="clear-cart btn btn-danger">
+                  <i class="far fa-trash-alt"></i> Clear Cart
+                </button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="jumbotron jumbotron-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12">
+            <h1 class="h1">
+              Contact us <small>Feel free to contact us</small>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well well-sm">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name"> Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter name"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email"> Email Address</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><span class="glyphicon glyphicon-envelope"></span>
+                      </span>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject"> Subject</label>
+                    <select
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                      required="required"
+                    >
+                      <option value="na" selected="">Choose One:</option>
+                      <option value="service">General Customer Service</option>
+                      <option value="suggestions">Suggestions</option>
+                      <option value="product">Product Support</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name"> Message</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-control"
+                      rows="9"
+                      cols="25"
+                      required="required"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button
+                    type="submit"
+                    class="btn btn-primary pull-right"
+                    id="btnContactUs"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <form>
+            <legend>
+              <span class="glyphicon glyphicon-globe"></span> Our office
+            </legend>
+            <address>
+              <strong>Sample, Inc.</strong><br />
+              795 Folsom Ave, Suite 600<br />
+              San Francisco, CA 94107<br />
+              <abbr title="Phone"> P:</abbr>
+              (123) 456-7890
+            </address>
+            <address>
+              <strong>Full Name</strong><br />
+              <a href="mailto:f_er_010@hotmail.com">first.last@example.com</a>
+            </address>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-primary" id="success">Place Order</button>
+                    <!-- order received alert box  -->
+                    <div class="notify"><span id="notifyType" class=""></span></div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        Copyright &copy;
+      </div>
+    </footer>
+  </div>
+
+    <!-- Code to the JavaScript File -->
+    <script type="text/javascript" src="contact.js"></script>
+    <script type="text/javascript" src="contactcart.js"></script>
+  </body>
+</html>

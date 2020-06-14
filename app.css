@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black !important;
+}
+
+/* Navigation bar */
+.navbar {
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 14px;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* dropdown menu */
+.navbar-brand {
+  margin-right: 0 !important;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+.w3-bar-block .w3-bar-item {
+  background-color: #333;
+  border: none;
+}
+
+.w3-bar-block .w3-bar-item:hover {
+  background-color: #333 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.w3-border {
+  border: 0px !important;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* Set up the hover */
+  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+  background-image: linear-gradient(dodgerblue, dodgerblue);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  color: white;
+  background-size: 100% 5px, auto;
+  text-decoration: none;
+}
+
+/* cart/clear cart bar */
+.navbar-expand-lg .navbar-nav {
+  padding-left: 200px;
+}
+
+/* title */
+
+.content {
+  font-family: 'Courgette', cursive;
+  padding-top: 13%;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* image */
+
+#imgma {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  margin-top: 50px !important;
+  margin-bottom: 80px !important;
+  border-radius: 25px;
+}
+
+/*  social media icon bar */
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  opacity: 0.9;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: white;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* cards */
+
+.card {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 25px;
+  padding: 8px;
+  width: auto;
+  color: white;
+  background-color: rgb(26, 23, 23) !important;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 white;
+}
+
+/* arrow button up */
+
+#up {
+  color: grey;
+  float: right;
+  margin-right: 3%;
+}
+
+#up:hover {
+  color: lightgray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* footer */
+
+footer {
+  margin-top: 100px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+/* Modal add order info */
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+/* order received alert box */
+
+.notify {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: dodgerblue;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: height 0.2s;
+  left: -0.5%;
+  font-size: large;
+}
+
+#notifyType:before {
+  display: block;
+  margin-top: 15px;
+}
+
+.active {
+  height: 50px;
+}
+
+.success:before {
+  content: 'Order Received';
+}
