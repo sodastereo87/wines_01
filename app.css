@@ -95,7 +95,7 @@ body {
 .icon-bar {
   position: fixed;
   top: 50%;
-  left: 2%;
+  right: 2%;
   opacity: 0.9;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
