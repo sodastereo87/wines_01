@@ -1,5 +1,5 @@
 #cont {
-  background-image: url('../images/lomig-1GtqsbkrzK8-unsplash.jpg');
+  background-image: url('../images/banner.jpg');
   color: white !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 
 h1,
 h3 {
-  font-family: 'Indie Flower', cursive !important;
+  font-weight: 100 !important;
 }
 
 /* footer */
