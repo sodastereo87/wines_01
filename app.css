@@ -3,7 +3,12 @@
 }
 
 body {
-  background-color: black !important;
+  background-color: white !important;
+}
+
+h1,
+h3 {
+  color: black !important;
 }
 
 /* Navigation bar */
@@ -116,7 +121,7 @@ body {
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-  background-color: white;
+  background-color: lightgray;
 }
 
 .facebook {
