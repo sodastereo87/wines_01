@@ -29,19 +29,43 @@ h3 {
   border: none;
 }
 
-.w3-bar-block .w3-bar-item {
-  background-color: #333;
-  border: none;
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: none !important;
+  background-clip: padding-box;
+  border: none !important;
+  border-radius: 0.25rem;
 }
 
-.w3-bar-block .w3-bar-item:hover {
-  background-color: #333 !important;
+.navbar a:hover {
   color: white !important;
   border: none !important;
+  background-color: #343a40 !important;
 }
 
-.w3-border {
-  border: 0px !important;
+/* show dropdown menu on hover */
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 /* Links inside the navbar */
@@ -184,16 +208,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* footer */
-
-footer {
-  margin-top: 100px;
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  height: 50px;
-}
-
 /* Modal add order info */
 
 dl,
@@ -233,4 +247,75 @@ ul {
 
 .success:before {
   content: 'Order Received';
+}
+
+/* footer */
+.footer {
+  background: #152f4f;
+  color: white;
+
+  .links {
+    ul {
+      list-style-type: none;
+    }
+    li a {
+      color: white;
+      transition: color 0.2s;
+      &:hover {
+        text-decoration: none;
+        color: #4180cb;
+      }
+    }
+  }
+  .about-company {
+    i {
+      font-size: 25px;
+    }
+    a {
+      color: white;
+      transition: color 0.2s;
+      &:hover {
+        color: #4180cb;
+      }
+    }
+  }
+  .location {
+    i {
+      font-size: 18px;
+    }
+  }
+  .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+a {
+  color: white !important;
+}
+
+li {
+  color: white !important;
+}
+
+#iconfoot {
+  display: block;
+  /* text-align: center; */
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.footer {
+  background: #343a40;
 }
