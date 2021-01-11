@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wines_v1.0</title>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wines_v1.0</title>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <link rel="stylesheet" type="text/css" href="about.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" type="text/css" href="about.css" />
 
-    <script
-      src="https://kit.fontawesome.com/f1f7f2d043.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <script src="https://kit.fontawesome.com/f1f7f2d043.js" crossorigin="anonymous"></script>
 
-  <body>
-   <!-- navbar -->
-   <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+  <link href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
     <!-- <a class="navbar-brand"><img src="img/dish.png"></a> -->
     <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
       <span class="navbar-toggler-icon"></span>
@@ -89,148 +75,140 @@
     </div>
   </nav>
 
-    <div id="cont">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="container">
-        <h1>About Us</h1>
-        <div class="row">
-          <div class="col">
-            <h3>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like). It is a long established
-              fact that a reader will be distracted by the readable content of a
-              page when looking at its layout. The point of using Lorem Ipsum is
-              that it has a more-or-less normal distribution of letters, as
-              opposed to using 'Content here, content here', making it look like
-              readable English. Many desktop publishing packages and web page
-              editors now use Lorem Ipsum as their default model text, and a
-              search for 'lorem ipsum' will uncover many web sites still in
-              their infancy. Various versions have evolved over the years,
-              sometimes by accident, sometimes on purpose (injected humour and
-              the like).
-            </h3>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cart Modal -->
-      <div
-        class="modal fade"
-        id="cart"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <table class="show-cart table"></table>
-              <div>Total price: $<span class="total-cart"></span></div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Order now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- footer -->
-
-  <!-- newsletter -->
-  <div class="mt-5 pt-5 pb-5 footer">
-    <div class="container p-4 pb-0">
-      <form action="">
-        <div class="row">
-          <div class="col-auto mb-4 mb-md-0">
-            <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
-          </div>
-
-          <div class="col-md-5 col-12 mb-4 mb-md-0">
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form5Example2" class="form-control" />
-              <label class="form-label" for="form5Example2">Email address</label>
-            </div>
-          </div>
-
-          <div class="col-auto mb-4 mb-md-0">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
-          </div>
-        </div>
-      </form>
-    </div>
-
+  <div id="cont">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div class="container">
+      <h1>About Us</h1>
       <div class="row">
-        <div class="col-lg-5 col-xs-12 about-company">
-          <h2>Heading</h2>
-          <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante
-            mollis quam tristique convallis </p>
-          <p id="iconfoot"><a href="#" class="facebook"><i class="fa fa-facebook mr-1"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter mr-1"></i></a>
-            <a href="#" class="google"><i class="fa fa-google mr-1"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin mr-1"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube mr-1"></i></a>
-          </p>
-        </div>
-        <div class="col-lg-3 col-xs-12 links">
-          <h4 class="mt-lg-0 mt-sm-3">Links</h4>
-          <ul class="m-0 p-10">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Nam mauris velit</a></li>
-            <li><a href="#">Etiam vitae mauris</a></li>
-            <li><a href="#">Fusce scelerisque</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-xs-12 location">
-          <h4 class="mt-lg-0 mt-sm-4">Location</h4>
-          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-          <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
-          <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col copyright">
-          <p class=""><small class="text-white-50">© 2021. All Rights Reserved.</small></p>
+        <div class="col">
+          <h3>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here,
+            content here', making it look like readable English. Many desktop
+            publishing packages and web page editors now use Lorem Ipsum as
+            their default model text, and a search for 'lorem ipsum' will
+            uncover many web sites still in their infancy. Various versions
+            have evolved over the years, sometimes by accident, sometimes on
+            purpose (injected humour and the like). It is a long established
+            fact that a reader will be distracted by the readable content of a
+            page when looking at its layout. The point of using Lorem Ipsum is
+            that it has a more-or-less normal distribution of letters, as
+            opposed to using 'Content here, content here', making it look like
+            readable English. Many desktop publishing packages and web page
+            editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in
+            their infancy. Various versions have evolved over the years,
+            sometimes by accident, sometimes on purpose (injected humour and
+            the like).
+          </h3>
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Total price: $<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Order now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <!-- newsletter -->
+    <div class="mt-5 pt-5 pb-5 footer">
+      <div class="container p-4 pb-0">
+        <form action="">
+          <div class="row">
+            <div class="col-auto mb-4 mb-md-0">
+              <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+            </div>
+
+            <div class="col-md-5 col-12 mb-4 mb-md-0">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+
+            <div class="col-auto mb-4 mb-md-0">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 about-company">
+            <h2>Heading</h2>
+            <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante
+              mollis quam tristique convallis </p>
+            <p id="iconfoot">
+              <a href="#" class="facebook" style="padding: 5px; border-radius: 50%;"><i class="fa fa-facebook"
+                  style="padding-left: 5px; padding-right: 5px;"></i></a>
+              <a href="#" class="twitter" style="padding: 5px; border-radius: 50%;"><i class="fa fa-twitter"
+                  style="padding-left: 1px; padding-right: 1px;"></i></a>
+              <a href="#" class="google" style="padding: 5px; border-radius: 50%;"><i class="fa fa-google"
+                  style="padding-left: 1px; padding-right: 1px;"></i></a>
+              <a href="#" class="linkedin" style="padding: 5px; border-radius: 50%;"><i class="fa fa-linkedin"
+                  style="padding-left: 1px; padding-right: 1px;"></i></a>
+              <a href="#" class="youtube" style="padding: 5px; border-radius: 50%;"><i class="fa fa-youtube"
+                  style="padding-left: 1px; padding-right: 1px;"></i></a>
+            </p>
+          </div>
+          <div class="col-lg-3 col-xs-12 links">
+            <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+            <ul class="m-0 p-10">
+              <li><a href="#">Lorem ipsum</a></li>
+              <li><a href="#">Nam mauris velit</a></li>
+              <li><a href="#">Etiam vitae mauris</a></li>
+              <li><a href="#">Fusce scelerisque</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-xs-12 location">
+            <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+            <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+            <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col copyright">
+            <p class=""><small class="text-white-50">© 2021. All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Code to the JavaScript File -->
     <script type="text/javascript" src="about.js"></script>
-  </body>
+</body>
+
 </html>
